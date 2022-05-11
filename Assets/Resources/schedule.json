@@ -1,0 +1,620 @@
+{
+  "rooms": [
+    {
+      "number": 529,
+      "days": [
+        {
+          "id": 1,
+          "weekday": 0,
+          "classes": [
+            {
+              "week": 0,
+              "subject": "MC",
+              "type": 0,
+              "teacher": "MSk",
+              "group": "IDSI1",
+              "startHour": "08:15",
+              "endHour": "09:45"
+            },
+            {
+              "week": 1,
+              "subject": "AiSD2",
+              "type": 0,
+              "teacher": "MDł",
+              "group": "IDSI1",
+              "startHour": "08:15",
+              "endHour": "09:45"
+            },
+            {
+              "week": 0,
+              "subject": "RPiS",
+              "type": 0,
+              "teacher": "WPr",
+              "group": "AiR I/6",
+              "startHour": "10:00",
+              "endHour": "11:30"
+            },
+            {
+              "week": 1,
+              "subject": "WdDU",
+              "type": 0,
+              "teacher": "JŚm",
+              "group": "AiR I/2",
+              "startHour": "10:00",
+              "endHour": "11:30"
+            },
+            {
+              "week": 2,
+              "subject": "SWiRR",
+              "type": 1,
+              "teacher": "",
+              "group": "IGT",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 2,
+              "subject": "OS",
+              "type": 1,
+              "teacher": "BA",
+              "group": "INFE II sem. 3 I/4",
+              "startHour": "16:00",
+              "endHour": "17:30"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weekday": 1,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "EiM",
+              "type": 0,
+              "teacher": "AdPo",
+              "group": "INF I/4",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 2,
+              "subject": "AMiAL",
+              "type": 0,
+              "teacher": "MarMac",
+              "group": "INF I/4",
+              "startHour": "10:15",
+              "endHour": "11:45"
+            },
+            {
+              "week": 2,
+              "subject": "Fiz",
+              "type": 0,
+              "teacher": "JJ",
+              "group": "INF I/4",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 2,
+              "subject": "EiM",
+              "type": 0,
+              "teacher": "KZ",
+              "group": "TI II/TI1",
+              "startHour": "13:45",
+              "endHour": "15:15"
+            },
+            {
+              "week": 1,
+              "subject": "AiSD",
+              "type": 0,
+              "teacher": "JŻy",
+              "group": "INF I/4",
+              "startHour": "15:30",
+              "endHour": "17:00"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weekday": 2,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "VOiP",
+              "type": 1,
+              "teacher": "PZ",
+              "group": "TI S2-II/TCh",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 2,
+              "subject": "SK",
+              "type": 2,
+              "teacher": "",
+              "group": "",
+              "startHour": "10:00",
+              "endHour": "12:00"
+            },
+            {
+              "week": 0,
+              "subject": "PiSM",
+              "type": 0,
+              "teacher": "TPa",
+              "group": "TI IV/2",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 1,
+              "subject": "PiSM",
+              "type": 0,
+              "teacher": "TPa",
+              "group": "TI IV/1",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 0,
+              "subject": "PE",
+              "type": 0,
+              "teacher": "EA",
+              "group": "INF I/5",
+              "startHour": "15:15",
+              "endHour": "16:45"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weekday": 3,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "UWA",
+              "type": 1,
+              "teacher": "KSt",
+              "group": "AiR III/1",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 0,
+              "subject": "WUUS",
+              "type": 1,
+              "teacher": "MF PNo",
+              "group": "AiR III/1",
+              "startHour": "10:45",
+              "endHour": "12:15"
+            },
+            {
+              "week": 1,
+              "subject": "AiUR",
+              "type": 1,
+              "teacher": "DCh",
+              "group": "AiR III/1",
+              "startHour": "10:45",
+              "endHour": "12:15"
+            },
+            {
+              "week": 2,
+              "subject": "SZwIP",
+              "type": 1,
+              "teacher": "MJa JKr",
+              "group": "AiR S2-I",
+              "startHour": "12:30",
+              "endHour": "14:00"
+            },
+            {
+              "week": 0,
+              "subject": "MN",
+              "type": 0,
+              "teacher": "WŁ",
+              "group": "INF II/5",
+              "startHour": "14:00",
+              "endHour": "15:30"
+            },
+            {
+              "week": 1,
+              "subject": "MN",
+              "type": 0,
+              "teacher": "WŁ",
+              "group": "INF II/3",
+              "startHour": "14:00",
+              "endHour": "15:30"
+            },
+            {
+              "week": 0,
+              "subject": "MN",
+              "type": 0,
+              "teacher": "WŁ",
+              "group": "INF II/4",
+              "startHour": "14:00",
+              "endHour": "15:30"
+            },
+            {
+              "week": 1,
+              "subject": "MN",
+              "type": 0,
+              "teacher": "WŁ",
+              "group": "INF II/2",
+              "startHour": "14:00",
+              "endHour": "15:30"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "weekday": 4,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "PM",
+              "type": 0,
+              "teacher": "",
+              "group": "AiR II/5",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 2,
+              "subject": "Mec",
+              "type": 0,
+              "teacher": "EdK",
+              "group": "AiR I/3",
+              "startHour": "10:15",
+              "endHour": "11:45"
+            },
+            {
+              "week": 2,
+              "subject": "Mec",
+              "type": 0,
+              "teacher": "ZdRak",
+              "group": "AiR I/4",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 2,
+              "subject": "Sosc",
+              "type": 3,
+              "teacher": "",
+              "group": "Makro sem4",
+              "startHour": "13:45",
+              "endHour": "15:15"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "weekday": 5,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "SPD",
+              "type": 1,
+              "teacher": "",
+              "group": "Aplikacje mobilne, sieci komputerowem bazy danych",
+              "startHour": "08:00",
+              "endHour": "19:00"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "weekday": 6,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "JO",
+              "type": 0,
+              "teacher": "",
+              "group": "N2Z rok1 Gr1",
+              "startHour": "08:30",
+              "endHour": "10:45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 530,
+      "days": [
+        {
+          "id": 1,
+          "weekday": 0,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "MiRPW",
+              "type": 1,
+              "teacher": "KPu",
+              "group": "Bio-II1 Aut1",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 2,
+              "subject": "BS",
+              "type": 0,
+              "teacher": "KPu",
+              "group": "Bio-II1 Aut1",
+              "startHour": "10:00",
+              "endHour": "11:30"
+            },
+            {
+              "week": 2,
+              "subject": "Mec",
+              "type": 0,
+              "teacher": "ZdRak",
+              "group": "AiR I/5",
+              "startHour": "11:45",
+              "endHour": "13:15"
+            },
+            {
+              "week": 0,
+              "subject": "RPiS",
+              "type": 0,
+              "teacher": "JuM",
+              "group": "AiR I/2",
+              "startHour": "13:45",
+              "endHour": "15:15"
+            },
+            {
+              "week": 1,
+              "subject": "RPiS",
+              "type": 0,
+              "teacher": "JuM",
+              "group": "AiR I/3",
+              "startHour": "14:00",
+              "endHour": "15:30"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weekday": 1,
+          "classes": [
+            {
+              "week": 0,
+              "subject": "AiSD",
+              "type": 0,
+              "teacher": "PF",
+              "group": "INF I/2",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 1,
+              "subject": "TUC",
+              "type": 0,
+              "teacher": "ZRo",
+              "group": "INF I/2",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 2,
+              "subject": "AMiAL",
+              "type": 0,
+              "teacher": "EwŁo",
+              "group": "INF I/2",
+              "startHour": "10:15",
+              "endHour": "11:45"
+            },
+            {
+              "week": 2,
+              "subject": "Fiz",
+              "type": 0,
+              "teacher": "dr DoT",
+              "group": "INF I/2",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 0,
+              "subject": "PE",
+              "type": 0,
+              "teacher": "KMo",
+              "group": "INF I/2",
+              "startHour": "13:45",
+              "endHour": "15:15"
+            },
+            {
+              "week": 1,
+              "subject": "PI",
+              "type": 0,
+              "teacher": "RT",
+              "group": "INF I/2",
+              "startHour": "13:45",
+              "endHour": "15:15"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weekday": 2,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "WSP",
+              "type": 1,
+              "teacher": "DCh",
+              "group": "Bio-II1 Aut1",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 2,
+              "subject": "EiM",
+              "type": 0,
+              "teacher": "JeFi",
+              "group": "TI II/TI2",
+              "startHour": "10:15",
+              "endHour": "11:45"
+            },
+            {
+              "week": 2,
+              "subject": "PS/PmK",
+              "type": 1,
+              "teacher": "MKu WoKi",
+              "group": "EiT S1/sem.06",
+              "startHour": "13:00",
+              "endHour": "14:30"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weekday": 3,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "BS",
+              "type": 1,
+              "teacher": "KPu",
+              "group": "Bio-II1 Aut1",
+              "startHour": "08:30",
+              "endHour": "10:00"
+            },
+            {
+              "week": 2,
+              "subject": "WKiM",
+              "type": 1,
+              "teacher": "MSz",
+              "group": "Bio-II1 Aut1",
+              "startHour": "10:15",
+              "endHour": "11:45"
+            },
+            {
+              "week": 0,
+              "subject": "IMPR",
+              "type": 1,
+              "teacher": "TGrz",
+              "group": "AiR Rok S2/II",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 1,
+              "subject": "EP",
+              "type": 0,
+              "teacher": "ToSze",
+              "group": "AiR S2-II/Rob",
+              "startHour": "12:00",
+              "endHour": "13:30"
+            },
+            {
+              "week": 2,
+              "subject": "JO",
+              "type": 0,
+              "teacher": "",
+              "group": "AiR Rok I",
+              "startHour": "13:45",
+              "endHour": "15:15"
+            },
+            {
+              "week": 2,
+              "subject": "BIAI",
+              "type": 1,
+              "teacher": "KCy",
+              "group": "INFE III sem.5/6",
+              "startHour": "15:15",
+              "endHour": "16:45"
+            },
+            {
+              "week": 0,
+              "subject": "MN",
+              "type": 0,
+              "teacher": "WŁ",
+              "group": "INF II/4",
+              "startHour": "14:00",
+              "endHour": "15:30"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "weekday": 4,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "WS",
+              "type": 1,
+              "teacher": "KFu JŻy",
+              "group": "Bio-II1 Aut1",
+              "startHour": "08:00",
+              "endHour": "10:15"
+            },
+            {
+              "week": 2,
+              "subject": "Mec",
+              "type": 0,
+              "teacher": "EdK",
+              "group": "AiR I/7",
+              "startHour": "11:45",
+              "endHour": "13:15"
+            },
+            {
+              "week": 0,
+              "subject": "BOA",
+              "type": 1,
+              "teacher": "RCz KJa KSk",
+              "group": "AiR S2-I/Rob",
+              "startHour": "13:30",
+              "endHour": "15:00"
+            },
+            {
+              "week": 1,
+              "subject": "Negocjacje",
+              "type": 0,
+              "teacher": "GO",
+              "group": "AiR S2-I/Rob",
+              "startHour": "13:30",
+              "endHour": "15:00"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "weekday": 5,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "JO",
+              "type": 0,
+              "teacher": "",
+              "group": "N1z Inf rok1",
+              "startHour": "08:00",
+              "endHour": "10:15"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "weekday": 6,
+          "classes": [
+            {
+              "week": 2,
+              "subject": "JN_A1",
+              "type": 0,
+              "teacher": "IS",
+              "group": "gwAEiI Inf n2w II",
+              "startHour": "08:00",
+              "endHour": "10:15"
+            },
+            {
+              "week": 2,
+              "subject": "Fiz",
+              "type": 0,
+              "teacher": "AlGa",
+              "group": "N1z rok1 Gr1",
+              "startHour": "10:15",
+              "endHour": "12:30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

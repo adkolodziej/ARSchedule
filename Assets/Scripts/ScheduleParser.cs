@@ -8,6 +8,10 @@ namespace Assets.Scripts
     {
         [SerializeField]
         public TextAsset scheduleJSON;
+        [SerializeField]
+        public GameObject classUIPrefab;
+        [SerializeField]
+        public GameObject scheduleUI;
 
         public Rooms schedule;
         void Start()
@@ -18,13 +22,20 @@ namespace Assets.Scripts
             {
                 foreach (var day in room.days)
                 {
-                    Debug.Log(day.weekday);
                     foreach (var c in day.classes)
                     {
-                        Debug.Log(c.type + " " + c.week + ". " + c.subject + ": " + c.startHour + " - " + c.endHour);
+                        var newClass = Instantiate(classUIPrefab);
+                        newClass.transform.parent = scheduleUI.transform;
+                        Vector3 pos = newClass.transform.position;
+                        pos.x += 400;
+                        newClass.transform.position = pos;
+                        var classScript = newClass.GetComponent<InitializeClassUI>();
+                        classScript.setHours(c.startHour, c.endHour);
+                        classScript.SetTexts(c.subject, c.type.ToString(), c.teacher, c.group);
                     }
                 }
             }
+
         }
     }
 }
