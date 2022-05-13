@@ -3,7 +3,9 @@ guid: db6709f48fca3fc4fbf1002006a5991f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - scheduleJSON: {fileID: 4900000, guid: dac2786d525562e4eb1efdafe7676b4d, type: 3}
+  - classUI: {fileID: 5276022692545708785, guid: fe537b641220cdf4db172e01dc2d1cd7, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

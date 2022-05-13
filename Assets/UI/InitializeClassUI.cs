@@ -16,6 +16,8 @@ public class InitializeClassUI : MonoBehaviour
     private GameObject background;
 
     private Color blockColor;
+    public int startPosition;
+    public int endPosition;
 
     public void SetTexts(string subject, string type, string teacher, string group)
     {
@@ -27,17 +29,19 @@ public class InitializeClassUI : MonoBehaviour
         background.GetComponent<Image>().color = blockColor;
     }
 
-    public void setHours(string start, string end)
+    public void setTimeBoundries(string start, string end)
     {
         int startHour = int.Parse(start.Substring(0, 2));
         int startMinute = int.Parse(start.Substring(3, 2));
         int endHour = int.Parse(end.Substring(0, 2));
         int endMinute = int.Parse(end.Substring(3, 2));
+
+        startPosition = 44 - ((startHour - 8) * 4 + startMinute / 15);
+        endPosition = 44 - ((endHour - 8) * 4 + endMinute / 15);
     }
 
     private void setColor(string type)
     {
-        Debug.Log(type);
         switch(type)
         {
             case "exercises":
