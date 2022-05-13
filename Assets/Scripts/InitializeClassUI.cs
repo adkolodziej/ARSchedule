@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class InitializeClassUI : MonoBehaviour
 {
     [SerializeField]
-    private Text subject;
+    private TextMeshProUGUI subject;
     [SerializeField]
-    private Text type;
+    private TextMeshProUGUI type;
     [SerializeField]
-    private Text teacher;
+    private TextMeshProUGUI teacher;
     [SerializeField]
-    private Text group;
+    private TextMeshProUGUI group;
     [SerializeField]
     private GameObject background;
 
@@ -36,8 +37,8 @@ public class InitializeClassUI : MonoBehaviour
         int endHour = int.Parse(end.Substring(0, 2));
         int endMinute = int.Parse(end.Substring(3, 2));
 
-        startPosition = 44 - ((startHour - 8) * 4 + startMinute / 15);
-        endPosition = 44 - ((endHour - 8) * 4 + endMinute / 15);
+        startPosition = 44 - ((startHour - 7) * 4 + startMinute / 15);
+        endPosition = 44 - ((endHour - 7) * 4 + endMinute / 15);
     }
 
     private void setColor(string type)

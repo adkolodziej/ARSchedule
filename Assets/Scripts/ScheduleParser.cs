@@ -9,43 +9,67 @@ namespace Assets.Scripts
         [SerializeField]
         public TextAsset scheduleJSON;
         [SerializeField]
-        public GameObject classUIPrefab;
+        public GameObject classPrefabBoth;
         [SerializeField]
-        public GameObject scheduleUI;
+        public GameObject classPrefabOdd;
+        [SerializeField]
+        public GameObject classPrefabEven;
+        [SerializeField]
+        public GameObject classesPanel;
 
-        public Rooms schedule;
+        private Rooms schedule;
         void Start()
         {
             schedule = JsonUtility.FromJson<Rooms>(scheduleJSON.text);
-            readSchedule();
+            readSchedule(529);
         }
 
-        public void readSchedule()
+        public void readSchedule(int roomNumber)
         {
-            var room = schedule.rooms[0];
-            foreach (var day in room.days)
+            var columns = GameObject.FindGameObjectsWithTag("column");  // all columns for class boxes
+            GameObject prefab;  // prefab that should be used based on week presence
+
+            foreach (var room in schedule.rooms)
             {
-                int dayOfWeek = (int)day.weekday;
-                foreach (var c in day.classes)
+                if (room.number != roomNumber)
+                    continue;
+
+                foreach (var day in room.days)
                 {
-                    var newClass = Instantiate(classUIPrefab);
-                    var classScript = newClass.GetComponent<InitializeClassUI>();
-                    classScript.setTimeBoundries(c.startHour, c.endHour);
-                    classScript.SetTexts(c.subject, c.type.ToString(), c.teacher, c.group);
+                    int dayOfWeek = (int)day.weekday;
+                    foreach (var c in day.classes)
+                    {
+                        switch (c.week)
+                        {
+                            case Week.odd:
+                                prefab = classPrefabOdd;
+                                break;
+                            case Week.even:
+                                prefab = classPrefabEven;
+                                break;
+                            default:
+                                prefab = classPrefabBoth;
+                                break;
+                        }
 
-                    var panelSize = scheduleUI.GetComponent<RectTransform>().sizeDelta;
+                        var box = Instantiate(prefab);
+                        var boxScript = box.GetComponent<InitializeClassUI>();
+                        box.transform.SetParent(columns[dayOfWeek].transform);
 
-                    newClass.transform.parent = scheduleUI.transform;
-                    newClass.transform.localScale = new Vector3(1, 1, 1);
-                    Vector3 pos = newClass.transform.position;
-                    pos.y += classScript.endPosition * 2 * (panelSize.y / 44);
-                    Debug.Log($"{pos.y} is for {classScript.endPosition}");
-                    pos.x = scheduleUI.transform.position.x - panelSize.x * 4 + ((dayOfWeek * panelSize.x * 4) / 7);
-                    newClass.transform.position = pos;
-                
-                    Vector2 size = newClass.GetComponent<RectTransform>().sizeDelta;
-                    size.y = (classScript.startPosition - classScript.endPosition) * (panelSize.y / 44);
-                    newClass.GetComponent<RectTransform>().sizeDelta = size;
+                        boxScript.setTimeBoundries(c.startHour, c.endHour);
+                        boxScript.SetTexts(c.subject, c.type.ToString(), c.teacher, c.group);
+
+                        Vector2 panelSize = classesPanel.GetComponent<RectTransform>().sizeDelta;
+                        Vector3 panelPos = classesPanel.transform.position;
+                        Vector2 size = box.GetComponent<RectTransform>().sizeDelta;
+                        Vector3 pos = box.transform.position;
+
+                        pos.y += boxScript.endPosition * (panelSize.y / 44);
+                        size.y = (boxScript.startPosition - boxScript.endPosition) * (panelSize.y / 44);
+
+                        box.transform.position = pos;
+                        box.GetComponent<RectTransform>().sizeDelta = size;
+                    }
                 }
             }
         }
