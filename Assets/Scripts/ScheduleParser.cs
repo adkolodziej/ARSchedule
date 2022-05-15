@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Vuforia;
 
 namespace Assets.Scripts
 {
@@ -16,24 +17,38 @@ namespace Assets.Scripts
         public GameObject classPrefabEven;
         [SerializeField]
         public GameObject classesPanel;
+        [SerializeField]
+        private List<ImageTargetBehaviour> imageTargets;
+        [SerializeField]
+        private GameObject scheduleUI;
 
         private Rooms schedule;
         void Start()
         {
             schedule = JsonUtility.FromJson<Rooms>(scheduleJSON.text);
-            readSchedule(529);
+            Deactivate();
         }
 
-        public void readSchedule(int roomNumber)
+        public void Deactivate()
         {
+            //scheduleUI.gameObject.SetActive(false);
+            //scheduleUI.transform.parent = transform;
+        }
+
+        public void readSchedule()
+        {
+            scheduleUI.gameObject.SetActive(true);
+            var imageTarget = imageTargets.Find(x => x.TargetStatus.Status == Status.TRACKED);
+            if(imageTarget == null) return;
             var columns = GameObject.FindGameObjectsWithTag("column");  // all columns for class boxes
             GameObject prefab;  // prefab that should be used based on week presence
 
             foreach (var room in schedule.rooms)
             {
-                if (room.number != roomNumber)
+                if (!imageTarget.TargetName.Contains(room.number.ToString()))
                     continue;
 
+                scheduleUI.transform.parent = imageTarget.transform;
                 foreach (var day in room.days)
                 {
                     int dayOfWeek = (int)day.weekday;
@@ -69,6 +84,10 @@ namespace Assets.Scripts
 
                         box.transform.position = pos;
                         box.GetComponent<RectTransform>().sizeDelta = size;
+
+                        box.transform.rotation = new Quaternion(90,0,0,0);
+                        box.transform.localScale = Vector3.one;
+                        box.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
                     }
                 }
             }
